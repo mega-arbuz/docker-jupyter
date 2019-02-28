@@ -3,7 +3,7 @@ services:
   jupyter:
     build: .
     container_name: jupyter-openu
-    image: jupyter-nbe-numpy
+    image: mega1arbuz/jupyter:jupyter-nbe-numpy
     ports:
       - "8888:8888"
     volumes:
