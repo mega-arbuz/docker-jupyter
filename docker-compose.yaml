@@ -1,7 +1,6 @@
 version: '2'
 services:
   jupyter:
-    build: .
     container_name: jupyter-openu
     image: mega1arbuz/jupyter:jupyter-nbe-numpy
     ports:
