@@ -1,10 +1,10 @@
-# Jupyter Docker Image with NBE and Numpy
+# Jupyter Docker Image with _nbextensions_ and _NumPY_
 
 ## Docker Hub
 https://hub.docker.com/r/mega1arbuz/jupyter
 
 ## Content
-Image with nbe-extensions and numpy installed.
+Image with nbextensions and numpy installed.
 
 Enabled extensions:
  - Cell Execution Timing
@@ -26,7 +26,6 @@ Available in [GitHub repo](https://github.com/mega-arbuz/docker-jupyter/blob/mas
 version: '2'
 services:
   jupyter:
-    build: .
     container_name: jupyter-openu
     image: mega1arbuz/jupyter:jupyter-nbe-numpy
     ports:
