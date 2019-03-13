@@ -1,11 +1,9 @@
-# Jupyter Docker Image with _nbextensions_ and _NumPY_
+# Jupyter Docker Image
 
-## Docker Hub
-https://hub.docker.com/r/mega1arbuz/jupyter
+## Tags
+[`jupyter-nbe-numpy`](https://github.com/mega-arbuz/docker-jupyter)
 
-## Content
-Image with nbextensions and numpy installed.
-
+###  Image with _nbextensions_ and _NumPY_ (for NLP course at OpenU :)
 Enabled extensions:
  - Cell Execution Timing
  - Collapsible Headings
@@ -34,8 +32,18 @@ services:
       - ./work:/home/jovyan/work
 ```
 
-### Run command
+### Run Command
 ```bash
 docker pull mega1arbuz/jupyter:jupyter-nbe-numpy
 docker run -it --rm -p 8888:8888 -v /path/to/your/work/directory:/home/jovyan/work mega1arbuz/jupyter:jupyter-nbe-numpy
+```
+### Change Token
+Docker compose
+```yaml
+environment:
+      - JUPYTER_TOKEN=new_token
+```
+Docker run
+```bash
+--env JUPYTER_TOKEN=new_token
 ```

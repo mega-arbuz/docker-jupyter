@@ -3,6 +3,8 @@ services:
   jupyter:
     container_name: jupyter-openu
     image: mega1arbuz/jupyter:jupyter-nbe-numpy
+    environment:
+      - JUPYTER_TOKEN=12345abcd
     ports:
       - "8888:8888"
     volumes:
